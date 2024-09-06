@@ -1,40 +1,203 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<link rel="stylesheet" href="dist/reset.css">
-		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css">
+	<title>reveal.js</title>
 
-		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="plugin/highlight/monokai.css">
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
+	<link rel="stylesheet" href="dist/reset.css">
+	<link rel="stylesheet" href="dist/reveal.css">
+	<link rel="stylesheet" href="dist/theme/ktkv.css">
+
+	<!-- Theme used for syntax highlighted code -->
+	<link rel="stylesheet" href="plugin/highlight/monokai.css">
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section>
+				<section>
+					<h1>Развитие языков программирования</h1>
+				</section>
+				<section>
+					<h1>
+						Основы алгоритмизации и программирования
+					</h1>
+					<div style="text-align: left;">
+						<h4>Кутиков Павел Алексеевич</h4>
+						<p>email: kutikovpasha@gmail.com</p>
+						<p>socials: @ktkv419</p>
+					</div>
+				</section>
+			</section>
+			<section>
+				<section>
+					<h1>
+						Программирование
+					</h1>
+					<p>
+						это процесс создания инструкций, которые компьютер может выполнять для решения конкретных
+						задач.
+					</p>
+				</section>
+				<section>
+					<h4>
+						Основная цель программирования
+					</h4>
+					<p>автоматизировать выполнение действий с помощью компьютера, чтобы
+						ускорить процессы, повысить их точность и снизить вероятность ошибок, возникающих при ручном выполнении.
+					</p>
+				</section>
+				<section>
+					<h4>Основные этапы работы программы:</h4>
+					<ul>
+						<li><b>
+								Ввод данных
+							</b> — программа получает данные от пользователя или из внешнего источника.</li>
+						<li><b>Обработка данных</b> — на основе полученных данных программа выполняет заданные инструкции
+							(вычисления,
+							сортировка, сравнение и т.д.).</li>
+						<li><b>Вывод результатов</b> — после обработки программа отображает результат пользователю или передает его
+							другим системам.</li>
+					</ul>
+				</section>
+			</section>
+			<section>
+				<h2>Виды программ</h2>
+				<div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1em;">
+					<div class="grid-box">
+						<h5>Системные программы</h5>
+						<p>обеспечивают базовое функционирование компьютера и взаимодействие между аппаратными ресурсами и
+							пользователем</p>
+					</div>
+					<div class="grid-box">
+						<h5>Прикладные программы</h5>
+						<p>созданы для выполнения конкретных задач, которые важны для пользователя</p>
+					</div>
+					<div class="grid-box">
+						<h5>Утилиты</h5>
+						<p>вспомогательные программы, которые помогают поддерживать и оптимизировать работу компьютера</p>
+					</div>
+				</div>
+			</section>
+			<section>
+				<section>
+					<h4>Язык программирования (ЯП)</h4>
+					<p>формальная система для написания программ, с помощью которой человек может задавать инструкции для
+						выполнения компьютером</p>
+				</section>
+			</section>
+			<section>
+				<section>
+					<h2>Зачем нужны ЯП?</h2>
+				</section>
+				<section>
+					<h3>Что делает эта программа?</h3>
+					<p>01110000 01110010 01101001 01101110 01110100 00101000 00100010 01001000 01100101 01101100 01101100
+						01101111
+						00100000 01110111 01101111 01110010 01101100 01100100 00100010 00101001</p>
+				</section>
+				<section>
+					<h3>А теперь?</h3>
+					<pre><code data-trim data-noescape>
+						print("hello world")
+					</code></pre>
+				</section>
+				<section>
+					<pre><code data-trim data-noescape>
+						hello world
+					</code></pre>
+				</section>
+			</section>
+			<section>
+				<section>
+					<h2>Из чего состоит ЯП:</h2>
+					<div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1em;">
+						<div class="grid-box">
+							<h5>Синтаксис</h5>
+							<p>набор правил и структур, которые определяют, как писать программы</p>
+						</div>
+						<div class="grid-box">
+							<h5>Семантика</h5>
+							<p>смысл, который вкладывается в команды и инструкции программы</p>
+						</div>
+					</div>
+				</section>
+				<section>
+					<h3>Синтаксис</h3>
+					<pre><code data-trim data-noescape data-line-numbers="|1,3|2,5-6">
+def add_numbers(a, b):
+	result = a + b
+	return result
+
+sum_value = add_numbers(5, 3)
+print(sum_value)
+					</code></pre>
+				</section>
+			</section>
+			<section>
+				<section>
+					<h2>
+						Машинный язык
+					</h2>
+					<p>
+						низкоуровневый язык программирования, состоящий из двоичных инструкций, понятных напрямую центральному
+						процессору (CPU) компьютера.
+					</p>
+				</section>
+				<section>
+					<h2>Преимущества машинного языка</h2>
+					<div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1em;">
+						<div class="grid-box">
+							<h5>Высокая скорость выполнения</h5>
+							<p>машинные инструкции выполняются напрямую процессором без дополнительной интерпретации или компиляции
+							</p>
+						</div>
+						<div class="grid-box">
+							<h5>Точное управление аппаратурой</h5>
+							<p>позволяет разработчикам максимально эффективно использовать ресурсы системы</p>
+						</div>
+					</div>
+				</section>
+				<section>
+					<h2>Недостатки машинного языка</h2>
+					<div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1em;">
+						<div class="grid-box">
+							<h5>Сложность написания</h5>
+							<p>разработчику необходимо писать код с использованием последовательностей нулей и единиц или их абстракций</p>
+						</div>
+						<div class="grid-box">
+							<h5>Трудоемкость отладки</h5>
+							<p>обнаружение и исправление ошибок в программе на машинном языке требует много времени и внимания к деталям</p>
+						</div>
+						<div class="grid-box">
+							<h5>Отсутствие переносимости</h5>
+							<p>программы, написанные на машинном языке, как правило, специфичны для определенной архитектуры процессора</p>
+						</div>
+					</div>
+				</section>
+			</section>
 		</div>
+	</div>
 
-		<script src="dist/reveal.js"></script>
-		<script src="plugin/notes/notes.js"></script>
-		<script src="plugin/markdown/markdown.js"></script>
-		<script src="plugin/highlight/highlight.js"></script>
-		<script>
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
-			Reveal.initialize({
-				hash: true,
+	<script src="dist/reveal.js"></script>
+	<script src="plugin/notes/notes.js"></script>
+	<script src="plugin/markdown/markdown.js"></script>
+	<script src="plugin/highlight/highlight.js"></script>
+	<script>
+		// More info about initialization & config:
+		// - https://revealjs.com/initialization/
+		// - https://revealjs.com/config/
+		Reveal.initialize({
+			hash: true,
 
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
-			});
-		</script>
-	</body>
+			// Learn about plugins: https://revealjs.com/plugins/
+			plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+		});
+	</script>
+</body>
+
 </html>
